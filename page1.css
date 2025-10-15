@@ -1,0 +1,468 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+/*--nav-start--*/
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.container{
+    background-color: black;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    top: 0px;
+    backdrop-filter: blur(80px);
+    z-index: 999;
+}
+
+nav h1 {
+    font-size: 45px;
+}
+
+nav .subNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav .subNav a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    padding: 5px;
+    position: relative;
+    transition: all 0.5s 0.2s;
+}
+.univer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1 span
+{
+    color: green;
+    font-size: 60px;
+} 
+nav button
+{
+    background-color: rgb(5, 48, 5);
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+nav img 
+{
+    width: 80px;
+    height: 70px;
+}
+nav .subNav a:hover::before,
+nav .subNav a:hover::after {
+    height: 50%;
+}
+
+nav .subNav a:hover {
+    color: white;
+}
+
+nav i {
+    font-size: 25px;
+}
+input 
+{
+    font-size: 40px;
+    color: aqua;
+}
+input:checked~.subNav {
+    background-color: aqua;
+    left: 20px;
+}
+
+input {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+@media only screen and (min-width:300px) and (max-width:1100px) {
+
+    nav .subNav {
+        position: fixed;
+        background-color: wheat;
+        left: 110%;
+        top: 88px;
+        width: 50%;
+        height: 63vh;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+        padding: 20px;
+        transition: all 1s;
+    }
+
+    nav label {
+        display: block;
+    }
+    nav button 
+    {
+        display: none;
+    }
+   
+
+}
+
+@media only screen and (min-width:300px) and (max-width:400px) {
+    nav {
+        width: 100%;
+        padding-left: 0px;
+    }
+    nav h1 
+    {
+        font-size: 20px;
+    }
+    nav h1 span 
+    {
+        font-size: 25px;
+    }
+}/*--nav-end--*/
+/* 
+/*nav animation start*/
+    /* .bullet
+{
+    position: absolute;
+    left: -10px;
+    bottom: -25px;
+    transition: all 1s;
+    z-index: 0;
+}
+
+.a1:hover~.bullet
+{
+     left: -10px;
+    bottom: -25px;
+}
+.a2:hover~.bullet
+{
+     left: 90px;
+    bottom: -25px;  
+}
+.a3:hover~.bullet
+{
+     left: 210px;
+    bottom: -25px;  
+}
+.a4:hover~.bullet
+{
+     left: 350px;
+    bottom: -25px;  
+}
+.bullet img
+{
+    width: 80px;
+   height:40px;
+}  */
+
+/*nav animation end*/
+
+ /*--page1-university-image-start--*/
+.uni-page1{
+    background-image: url(./university.png);
+    background-size: cover;
+    /* height:100vh; */
+    width:100%;
+    background-position: 0% 75%;
+}
+.dummy-div{
+    height:100vh;
+    width:45%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction:column ;
+    justify-content:center ;
+    align-items: center;
+    gap:30px;
+    padding-bottom:150px;
+    background-image: linear-gradient(to left,rgb(255, 255, 255,0),rgb(255, 255, 255,1));
+}
+.dummy-div p{
+    font-size: 23px;
+    line-height: 30px;
+}
+.dummy-div h1{
+    font-size: 45px;
+    animation-name: cnt2;
+     width:100%;
+    animation-duration: 1s;
+}
+@keyframes cnt2{
+    from{
+        margin-left:-300px;
+    }
+    to{
+        margin-left:0px;
+    }
+}
+.para{
+    width:70%;
+    margin-top: 200px;
+    /* line-height: 2; */
+}
+.para>p{
+    line-height: 1.5;
+    margin-bottom: 50px;
+    padding-top:20px;
+    animation-name: cnt-left;
+    animation-duration: 1s;
+    /* animation-delay: 1s; */
+    /* position: absolute; */
+    width:100%;
+
+}
+@keyframes cnt-left{
+    from{
+        margin-left:-300px;
+    }
+    to{
+        margin-left:0px;
+    }
+}
+.dummy-div button{
+    padding:15px 25px;
+    background-color: rgb(15, 247, 169);
+    color:white;
+    border-radius: 8px;
+    border:none;
+    font-size: 20px;
+    position: absolute;
+    animation-name: bt-ani;
+    animation-duration: 1s;
+
+}
+@keyframes bt-ani{
+    from{
+        margin-left:-300px;
+    }
+    to{
+        margin-left:0px;
+    }
+}
+.subNav a{
+    transition-duration: 0s;
+     border-radius: 20px;
+    padding-left:10px;
+     padding-right:10px;
+}
+.subNav a:hover{
+    background-image: linear-gradient(to left,rgb(204, 149, 31),rgb(235, 162, 162),rgb(204, 149, 31));
+    padding-left:10px;
+    padding-right:10px;
+}
+/*-circle-image-*/
+
+.circle-word{
+    position: absolute;
+    right:0px;
+    bottom:90px;
+}
+.Arrow{
+    position: absolute;
+    right:45px;
+   bottom:140px;
+    animation-name: line-arrow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes line-arrow{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+.uni-boxes{
+    display: flex;
+    justify-content: space-evenly;
+    /* position: relative; */
+}
+.uni-bx{
+    width:30%;
+    box-shadow: 0.5px 0.5px 4px 0.5px rgb(119, 118, 118);
+    margin-bottom: 50px;
+     margin-top: -50px;
+    background-color: white;
+    z-index: 3;
+    padding:20px;
+    padding-top:35px;
+}
+.uni-ed-img{
+    height:37px;
+    width:37px;
+}
+.uni-bx:hover{
+    transform:scale(2) ;
+    transition: all 1s;
+     box-shadow: 0.5px 0.5px 4px 3px rgb(214, 74, 9);
+}
+.uni-bx span:nth-child(2){
+    font-size: 27px;
+    color:rgb(15, 83, 46);
+}
+.uni-bx img{
+    margin-left: 70px;
+}
+.uni-bx>p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 23px;
+}
+.uni-bx span:nth-child(4){
+ color:rgb(15, 83, 46);
+}
+.uni-bx{
+    animation-name: educate-box;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-iteration-count:1 ;
+}
+@keyframes educate-box{
+    0%{
+        /* transform: scale(0); */
+        transform: rotatey(180deg);
+    }
+     100%{
+        /* transform: scale(1); */
+        transform: rotatey(360deg);
+    }
+}
+@media only screen and (min-width:300px) and (max-width:1100px) {
+    .para>p,.dummy-div button,.dummy-div h1{
+        animation: none;
+    }
+
+    .uni-expl,.circle-word,.Arrow{
+        display: none;
+    }
+    .uni-bx{
+        width:45%;
+    }
+    .dummy-div{
+        width:60%;
+    }
+    .dummy-div h1{
+    font-size: 35px;
+        }
+.para{
+    width:70%;
+    margin-top: 250px;
+}
+.para>p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding-top:20px;
+}
+.dummy-div button{
+    margin-bottom: 50px;
+    padding: 8px 12px;
+}
+nav button{
+    display: none;
+}
+}
+@media only screen and (min-width:500px) and (max-width:800px) {
+    .dummy-div button{
+        margin-bottom: 100px;
+        padding: 8px 12px;
+    }
+    .para{
+    width:80%;
+    margin-top: 250px;
+}
+.dummy-div {
+    width:80%;
+}
+}
+@media only screen and (min-width:300px) and (max-width:500px) {
+    .dummy-div button{
+        margin-bottom: 100px;
+        padding: 8px 12px;
+    }
+    .para{
+    width:90%;
+    margin-top: 100px;
+}
+.para h1{
+    font-size: 20px;
+}
+.para p{
+    font-size: 18px;
+}
+.dummy-div {
+    width:90%;
+}
+.dummy-div button{
+    margin-bottom: 0px;
+}
+.univer h1{
+    font-size: 30px;
+}
+.univer span{
+    font-size: 35px;
+}  
+nav .subNav{
+    left:150%;
+}
+}
+@media only screen and (min-width:300px) and (max-width:415px) {
+  .univer h1{
+    font-size: 20px;
+}  
+.univer span{
+    font-size: 25px;
+}  
+.univer img{
+    height:60px;
+    width:60px;
+}
+nav {
+    width: 105%;
+}
+}
+@media only screen and (min-width:300px) and (max-width:650px) {
+    .uni-expl,.uni-plc{
+        display: none;
+    }
+    .uni-bx{
+        width:90%;
+    }
+    .uni-page1{
+        background-position-x: 50%;
+    }
+
+}
+
+
+/*--page1-university-image-end--*/

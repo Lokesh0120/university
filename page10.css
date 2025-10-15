@@ -1,0 +1,266 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    top: 0px;
+    backdrop-filter: blur(80px);
+    z-index: 999;
+}
+
+nav h1 {
+    font-size: 45px;
+}
+
+nav .subNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav .subNav a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    padding: 5px;
+    position: relative;
+    transition: all 0.5s 0.2s;
+}
+.univer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1 span
+{
+    color: green;
+    font-size: 60px;
+} 
+nav button
+{
+    background-color: rgb(5, 48, 5);
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+nav img 
+{
+    width: 80px;
+    height: 70px;
+}
+nav .subNav a:hover::before,
+nav .subNav a:hover::after {
+    height: 50%;
+}
+
+nav .subNav a:hover {
+    color: white;
+}
+
+nav i {
+    font-size: 25px;
+}
+input 
+{
+    font-size: 40px;
+    color: aqua;
+}
+input:checked~.subNav {
+    background-color: aqua;
+    left: 20px;
+}
+
+input {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+@media only screen and (min-width:300px) and (max-width:1100px) {
+
+    nav .subNav {
+        position: fixed;
+        background-color: wheat;
+        left: 110%;
+        top: 88px;
+        width: 50%;
+        height: 63vh;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+        padding: 20px;
+        transition: all 1s;
+    }
+
+    nav label {
+        display: block;
+    }
+    nav button 
+    {
+        display: none;
+    }
+   
+
+}
+
+@media only screen and (min-width:300px) and (max-width:400px) {
+    nav {
+        width: 100%;
+        padding-left: 0px;
+    }
+    nav h1 
+    {
+        font-size: 20px;
+    }
+    nav h1 span 
+    {
+        font-size: 25px;
+    }
+}
+.contact{
+    background-image: url("./WhatsApp\ Image\ 2025-10-03\ at\ 13.25.28_c10831a3.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 70px 0px 0px 0px;
+    gap: 40px;
+    margin-top: 150px;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cont1{
+    width: 450px;
+    color: white;
+}
+.cont1 img{
+    height: 150px;
+    width: 150px;
+}
+.cont1 h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.cont1 p{
+    line-height: 1.5;
+}
+.cont2{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.cont2-box1{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    line-height: 2;
+}
+.cont2-box1 a{
+    text-decoration: none;
+    color: white;
+}
+.cont22{
+    padding-bottom: 60px;
+}
+.cont3{
+    width: 350px;
+    color: white;
+    line-height: 1.5;
+    padding-bottom: 60px;
+}
+.cont3 h3{
+    padding-bottom: 10px;
+}
+.cont3 input{
+    border: none;
+    padding: 10px;
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+input::placeholder{
+    color: black;
+}
+.cont4{
+    width: 50px;
+}
+.cont4 i{
+    padding: 20px 50px 20px 30px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+}
+.contact2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 50px 0px;
+}
+.cont2line1{
+    height: 2px;
+    width: 35%;
+    background-color: white;
+}
+.cont2line2{
+    /* width: 20%; */
+    color: white;
+    font-size: 35px;
+}
+.cont2line3{
+    height: 2px;
+    width: 35%;
+    background-color: white;
+}
+@media screen and (max-width:1200px) {
+    .contact{
+        min-height: 100vh;
+    }
+}
+@media only screen and (min-width:300px) and (max-width:600px)
+
+{
+    .cont2line2 i 
+    {
+        font-size: 18px;
+    }
+    .cont2line1, .cont2line3
+    {
+        margin-top: 12px;
+    }
+    /* .contact
+    {
+    } */
+    .cont3, .cont1, .cont2
+    {
+        width:90%;
+    }
+
+}

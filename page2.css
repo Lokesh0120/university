@@ -1,0 +1,504 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*nav bar start*/
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.container{
+    background-color: black;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    top: 0px;
+    backdrop-filter: blur(80px);
+    z-index: 999;
+}
+
+nav h1 {
+    font-size: 45px;
+}
+
+nav .subNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav .subNav a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    padding: 5px;
+    position: relative;
+    transition: all 0.5s 0.2s;
+}
+.univer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1 span
+{
+    color: green;
+    font-size: 60px;
+} 
+nav button
+{
+    background-color: rgb(5, 48, 5);
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+nav img 
+{
+    width: 80px;
+    height: 70px;
+}
+nav .subNav a:hover::before,
+nav .subNav a:hover::after {
+    height: 50%;
+}
+
+nav .subNav a:hover {
+    color: white;
+}
+
+nav i {
+    font-size: 25px;
+}
+input 
+{
+    font-size: 40px;
+    color: aqua;
+}
+input:checked~.subNav {
+    background-color: aqua;
+    left: 20px;
+}
+
+input {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+@media only screen and (min-width:300px) and (max-width:1100px) {
+
+    nav .subNav {
+        position: fixed;
+        background-color: wheat;
+        left: 110%;
+        top: 88px;
+        width: 50%;
+        height: 63vh;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+        padding: 20px;
+        transition: all 1s;
+    }
+
+    nav label {
+        display: block;
+    }
+    nav button 
+    {
+        display: none;
+    }
+   
+
+}
+
+@media only screen and (min-width:300px) and (max-width:400px) {
+    nav {
+        width: 100%;
+        padding-left: 0px;
+    }
+    nav h1 
+    {
+        font-size: 20px;
+    }
+    nav h1 span 
+    {
+        font-size: 25px;
+    }
+}/*nav bar end*/
+.main1
+{
+    background-image: url(./Rectangle\ 12.png);
+    background-size: cover;
+    padding: 50px;
+    Padding-top:120px;
+}
+.first-box1
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    gap: 50px;
+    padding: 0px 80px 0px 80px;
+}
+.boxx-1
+{
+    width: 45%;
+    height: 250px;
+}
+.boxx-2
+{
+    width: 45%;
+    color: white;
+}
+.box-2 p
+{
+    font-size: 18px;
+
+}
+.boxx-2 h2
+{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.boxx-1 img
+{
+    width: 100%;
+    height: 100%;
+}
+.key-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+.key-1
+{
+    border: 2px solid white;
+    border-radius: 5px;
+    position: relative;
+    width: 270px;
+    height: 270px;
+     padding: 50px 20px 20px 20px;
+}
+.key-1 h2
+{
+    color: white;
+    margin-bottom: 10px;
+}
+.key-1 p
+{
+    color: white;
+    font-size: 18px;
+}
+.key-1 button
+{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.key-1 img
+{
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    top: -25px;
+    left: 90px;
+}
+@media only screen and (min-width:600px) and (max-width:950px)
+{
+    .boxx-1
+    {
+        width: 100%;
+    }
+    .boxx-2
+    {
+        width: 100%;
+    }
+    .key-1
+    {
+        margin-bottom: 20px;
+    }
+  
+}
+@media only screen and (min-width:300px) and (max-width:600px)
+  {
+    .first-box1
+    {
+        padding: 0px;
+        flex-direction: column-reverse;
+    }
+    .boxx-1
+    {
+        width: 100%;
+    }
+    .boxx-2
+    {
+        width: 100%;
+    }
+    .key-1
+    {
+        width: 290px;
+        margin-bottom: 20px;
+    }
+    .main1
+    {
+        padding:15px;
+    }
+  }
+.main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    padding-top:130px;
+    margin-top: 100px;
+}
+.firstbox
+{
+    width: 50%;
+}
+h4 
+{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+h1
+{
+    color: rgb(5, 82, 5);
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+p 
+{
+    font-size: 20px;
+}
+.rocket
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 30px;
+}
+.bttn
+{
+    display: flex;
+    margin-top: 20px;
+}
+.btn 
+{
+    background-color: rgb(5, 82, 5);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.btn1
+{
+    margin-left: 30px;
+    width: 170px;
+    border: none;
+    background-color:  antiquewhite;
+}
+.rocket img 
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+.rocket img:nth-child(2)
+{
+    width: 20px;
+    height: 20px;
+}
+.secondbox 
+{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+.box2
+{
+    width: 210px;
+    height: 230px;
+    background-color: rgb(10, 78, 10);
+    color: white;
+    align-self: end;
+    padding: 15px;
+}
+.box2 img 
+{
+    width: 50px;
+    height: 50px;
+}
+.box1 
+{
+    height: 400px;
+    width: 60%;
+}
+.box1 img 
+{
+    height: 100%;
+    width: 100%;
+}
+.box2 p
+{
+    font-size: 15px;
+}
+.box2 h1 
+{
+    color: white;
+}
+.k6box
+{
+    display: flex;
+}
+.box3 
+{
+    width: 280px;
+    height: 220px;
+    position: absolute;
+     right: 0;
+     top: -20px;
+}
+.box3 img 
+{
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: -30px;
+}
+@media only screen and (min-width:300px) and (max-width:600px)
+{
+    .main
+    {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .firstbox
+    {
+        width: 100%;
+    }
+    .firstbox h1 
+    {
+        font-size: 30px;
+    }
+    .secondbox
+    {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .box3
+    {
+        position: unset;
+    }
+    .box1, .box2, .box3 
+    {
+        width: 100%;
+        height: 250px;
+        text-align:center;
+    }
+}
+.box1{
+    animation-name: box-ani1;
+    animation-timing-function: ease-in-out;
+    animation-duration:1s ;
+    animation-fill-mode: forwards;
+}
+@keyframes box-ani1{
+    from{
+        transform: rotatey(180deg);
+    }
+     to{
+        transform: rotatey(360deg);
+    }
+}
+.box3{
+    animation-name: box-ani2;
+    animation-timing-function: ease-in-out;
+    animation-duration:1s ;
+    animation-fill-mode: forwards;
+}
+@keyframes box-ani2{
+    from{
+        /* transform: rotatez(180deg); */
+        transform: scale(0);
+    }
+     to{
+        /* transform: rotatez(360deg); */
+        transform: scale(1);
+    }
+}
+.box2{
+    animation-name: box-ani3;
+    animation-timing-function: ease-in-out;
+    animation-duration:1s ;
+    animation-fill-mode: forwards;
+}
+@keyframes box-ani3{
+    from{
+        transform: rotatex(180deg);
+        /* transform: scale(0); */
+    }
+     to{
+        transform: rotatex(360deg);
+        /* transform: scale(1); */
+    }
+}
+.firstbox h4,.firstbox p,.firstbox h1,.firstbox .bttn{
+    animation-name: left-box;
+    animation-timing-function: ease-in-out;
+    animation-duration:1s ;
+    animation-fill-mode: forwards;
+}
+@keyframes left-box{
+    from{
+        transform: scale(0);
+    }
+     to{
+        transform: scale(1);
+    }
+}
+.secondbox{
+    animation-name: right-box;
+    animation-timing-function: ease-in-out;
+    animation-duration:1s ;
+    animation-fill-mode: forwards;
+}
+@keyframes right-box{
+    from{
+        transform: scale(0);
+    }
+     to{
+        transform: scale(1);
+    }
+}

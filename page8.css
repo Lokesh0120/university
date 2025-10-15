@@ -1,0 +1,315 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*nav bar start*/
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.container{
+    background-color: black;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    top: 0px;
+    backdrop-filter: blur(80px);
+    z-index: 999;
+}
+
+nav h1 {
+    font-size: 45px;
+}
+
+nav .subNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav .subNav a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    padding: 5px;
+    position: relative;
+    transition: all 0.5s 0.2s;
+}
+.univer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1 span
+{
+    color: green;
+    font-size: 60px;
+} 
+nav button
+{
+    background-color: rgb(5, 48, 5);
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+nav img 
+{
+    width: 80px;
+    height: 70px;
+}
+nav .subNav a:hover::before,
+nav .subNav a:hover::after {
+    height: 50%;
+}
+
+nav .subNav a:hover {
+    color: white;
+}
+
+nav i {
+    font-size: 25px;
+}
+input 
+{
+    font-size: 40px;
+    color: aqua;
+}
+input:checked~.subNav {
+    background-color: aqua;
+    left: 20px;
+}
+
+input {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+@media only screen and (min-width:300px) and (max-width:1100px) {
+
+    nav .subNav {
+        position: fixed;
+        background-color: wheat;
+        left: 110%;
+        top: 88px;
+        width: 50%;
+        height: 63vh;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+        padding: 20px;
+        transition: all 1s;
+    }
+
+    nav label {
+        display: block;
+    }
+    nav button 
+    {
+        display: none;
+    }
+   
+
+}
+
+@media only screen and (min-width:300px) and (max-width:400px) {
+    nav {
+        width: 100%;
+        padding-left: 0px;
+    }
+    nav h1 
+    {
+        font-size: 20px;
+    }
+    nav h1 span 
+    {
+        font-size: 25px;
+    }
+}
+.form-over{
+    
+    background-image: url("./student-book.jpg");
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+    background-size: cover;
+    padding: 40px 40px 40px 60px;
+    margin-top: 100px;
+}
+.form-over1{
+    width: 70%;
+    background-color: rgb(6, 53, 6);
+    padding-bottom: 30px;
+}
+.form-over h2{
+    color: white;
+    font-size: 40px;
+    padding-top: 50px;
+    margin-left: 10%;
+    padding-bottom: 30px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.form1{
+    width: 40%;
+}
+.form1 input
+{
+    display: block;
+}
+.form2 input 
+{
+    display: block;
+}
+.form1 input{
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid white;
+}
+.form1 ::placeholder{
+    color: white;
+}
+.form2{
+    width: 40%;
+    color: white;
+}
+.form2 input{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid white;
+}
+.form2 select{
+    width: 100%;
+    padding: 17px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid white;
+}
+.form2 ::placeholder{
+    color: white;
+}
+.fbut{
+    width: 60%;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 25px;
+    margin-left: 17%;
+    
+}
+.last-one{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+}
+.last-one h1{
+    color: green;
+    text-align: center;
+    font-size: 40px;
+}
+.lasto-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 60px;
+}
+.lasto-box1{
+    width: 320px;
+}
+.lastone-box1{
+    width: 320px;
+    position: relative;
+}
+.lastone-box1 img{
+    width: 320px;
+    height: 200px;
+}
+.lastone-box1 h5{
+    position: absolute;
+    color: white;
+    background-color: rgb(7, 119, 7);
+    top: 0px;
+    left: 0px;
+}
+.lastone-box2{
+    width: 280px;
+    line-height: 2;
+    background-color: rgb(247, 217, 161);
+    position: absolute;
+    left: 20px;
+    top: 160px;
+    padding: 15px;
+}
+.lastone-box2 button{
+    border: none;
+    background-color: transparent;
+    color: rgb(22, 85, 22);
+}
+.lastone-box2 h4{
+    color: green;
+    font-size: 15px;
+}
+@media screen and (max-width:1020px) {
+    .lasto-box3{
+    margin-top: 100px;
+   }
+}
+@media screen and (max-width:700px) {
+    .last-one h1{
+        font-size: 25px;
+        padding: 10px;
+    }
+   .lasto-box2{
+    margin-top: 100px;
+   }
+   .lasto-box3{
+    margin-top:100px;
+}
+}
+
+@media screen and (max-width:800px) {
+    .form-over1{
+        width: 100%;
+    }
+    .form-over{
+        padding: 0px;
+    }
+    .form-over1 h2{
+        font-size:30px;
+}
+}

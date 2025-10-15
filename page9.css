@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.last-one{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.last-one h1{
+    color: green;
+    text-align: center;
+    font-size: 40px;
+}
+.lasto-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 60px;
+}
+.lasto-box1{
+    width: 320px;
+}
+.lastone-box1{
+    width: 320px;
+    position: relative;
+}
+.lastone-box1 img{
+    width: 320px;
+    height: 200px;
+}
+.lastone-box1 h5{
+    position: absolute;
+    color: white;
+    background-color: rgb(7, 119, 7);
+    top: 0px;
+    left: 0px;
+}
+.lastone-box2{
+    width: 280px;
+    line-height: 2;
+    background-color: rgb(247, 217, 161);
+    position: absolute;
+    left: 20px;
+    top: 160px;
+    padding: 15px;
+}
+.lastone-box2 button{
+    border: none;
+    background-color: transparent;
+    color: rgb(22, 85, 22);
+}
+.lastone-box2 h4{
+    color: green;
+    font-size: 15px;
+}
+@media screen and (max-width:1020px) {
+    .lasto-box3{
+    margin-top: 100px;
+   }
+}
+@media screen and (max-width:700px) {
+    .last-one h1{
+        font-size: 25px;
+        padding: 10px;
+    }
+   .lasto-box2{
+    margin-top: 100px;
+   }
+   .lasto-box3{
+    margin-top:100px;
+}
+}
